@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def inicio(request):
-    return HttpResponse('Início do site 1')
+    return render(request, 'appcoins/inicio.html')
 
 def sobre(request):
     return HttpResponse('Sobre o site')
