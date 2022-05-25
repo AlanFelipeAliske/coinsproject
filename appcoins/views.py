@@ -1,16 +1,16 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
 
 
 def inicio(request):
-    return render(request, 'appcoins/inicio.html')
+    return render(request, 'appcoins/inicio.html', context={
+        'name': 'Testando',
+    })
 
 def sobre(request):
-    return HttpResponse('Sobre o site')
+    return render(request,'appcoins/sobre.html')
 
 def servicos(request):
-    return HttpResponse('Serviços do site')
+    return render(request, 'appcoins/servicos.html')
 
 def contato(request):
-    return HttpResponse('Contato do site')
+    return render(request, 'appcoins/contato.html')
