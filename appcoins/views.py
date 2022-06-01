@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def inicio(request):
-    return render(request, 'appcoins/inicio.html', context={
+    return render(request, 'appcoins/pages/inicio.html', context={
         'name': 'Testando',
     })
 
