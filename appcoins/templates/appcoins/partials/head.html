@@ -28,9 +28,12 @@
       </div>
 
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-        </a>
+        <h1>
+            <a class="main-logo" ref="/">
+                <i class="fa-solid fa-coins main-logo-icon"></i>
+                <span class="main-logo-text"> Clube de Moedas de Curitiba</span>
+            </a>
+        </h1>
     </nav>
 
     <style>
@@ -124,6 +127,19 @@
 
         .main-logo-icon {
             margin-right: 2rem;
+        }
+
+        .navbar {
+            font-size: 4rem;
+            color: var(--color-alert-dark);
+            text-decoration: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+            
         }
 
     </style>

@@ -14,3 +14,6 @@ def servicos(request):
 
 def contato(request):
     return render(request, 'appcoins/contato.html')
+
+def privado(request):
+    return render(request, 'appcoins/privado.html')

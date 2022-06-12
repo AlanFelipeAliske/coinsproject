@@ -1,6 +1,6 @@
 from django.urls import path
 
-from appcoins.views import inicio, sobre, servicos, contato
+from appcoins.views import inicio, sobre, servicos, contato, privado
 
 
 urlpatterns = [
@@ -8,4 +8,5 @@ urlpatterns = [
     path('sobre/', sobre),
     path('servicos/', servicos),
     path('contato/', contato),
+    path('privado/', privado),
 ]
